@@ -11,7 +11,6 @@ q = require("q");
 zlib = require('zlib');
 stream = require('stream');
 oboe = require('oboe');
-querystring = require('querystring');
 
 throwIf = {
   undefined : function (value) {
@@ -186,7 +185,6 @@ module.exports = function (userOptions) {
         // setup request
         requestOptions = {
           host: 'www.tinkapp.com',
-          //host: 'localhost',
           path: encodeURI('/api/v1/transactions?periods[]=' + period.name + '&limit=100&sort=DATE&order=DESC'),
           method: 'GET',
           headers: createHeader()
