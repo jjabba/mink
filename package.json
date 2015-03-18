@@ -1,0 +1,23 @@
+{
+  "name": "mink",
+  "version": "0.5",
+  "main": "mink.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": "Mining utility for tink.se financial service.",
+  "author": "Karl Berggren <kalle@jjabba.com>",
+  "dependencies": {
+    "underscore": ">= 1.7.0",
+    "q": "= 1.2.0",
+    "oboe": "= 2.1.1"
+  },
+  "devDependencies": {
+    "jsonschema": ">= 1.0.0",
+    "node-inspector": ">= 0.7.4"
+  },
+  "engines": {
+    "node": ">= 0.10.30",
+    "npm": "2.1.6"
+  }
+}
