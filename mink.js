@@ -243,6 +243,13 @@ module.exports = function (userOptions) {
         })
         .catch(transactionDefer.reject);
       return transactionDefer.promise;
+    },
+
+    getTransationsForPeriod: function (period) {
+      return service.login()
+        .then(function (loginData) {
+          return service.getTransationsForPeriod(loginData, period);
+        });
     }
 
   };
